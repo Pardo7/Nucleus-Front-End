@@ -1,7 +1,7 @@
 {
-  "name": "nucleus-chat",
+  "name": "ionic-project",
   "version": "1.0.0",
-  "description": "nucleus-chat: An Ionic project",
+  "description": "An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
