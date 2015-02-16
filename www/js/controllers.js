@@ -1,5 +1,5 @@
 
-angular.module('com.htmlxprs.nucleusChat.controllers',[])
+angular.module('nucleusChat.controllers',[])
 
     .controller('HomeController',['$scope','USER','$state', function($scope,USER,$state){
     $scope.user={};
@@ -10,7 +10,7 @@ angular.module('com.htmlxprs.nucleusChat.controllers',[])
 }])
     .controller('ChatController',['$scope','$rootScope', function($scope,$rootScope){
 
-    $rootScope.$on('event:file:selected',function(event,data){
+    $rootScope.$on('event:file:selected', function(event,data){
         //console.log(data.image)
     });
 
