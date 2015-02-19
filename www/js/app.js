@@ -15,10 +15,14 @@ angular.module('nucleusChat', ['ionic', 'firebase', 'nucleusChat.controllers', '
             if(window.StatusBar) {
                 StatusBar.styleDefault();
             }
-            $state.go('home');
+            $state.go('welcome');
         });
     }).config(['$stateProvider', function($stateProvider){
-        $stateProvider.state('home',{
+        $stateProvider.state('welcome',{
+            url:'/welcome',
+            controller:'WelcomeController',
+            templateUrl:'views/welcome.html'
+        }).state('home',{
             url:'/home',
             controller:'HomeController',
             templateUrl:'views/home.html'
@@ -26,5 +30,5 @@ angular.module('nucleusChat', ['ionic', 'firebase', 'nucleusChat.controllers', '
             url:'/chat',
             controller:'ChatController',
             templateUrl:'views/chat.html'
-        });
-}]);
+        })
+    }]);

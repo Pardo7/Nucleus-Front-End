@@ -34,4 +34,9 @@ angular.module('nucleusChat.controllers',[])
 
     // this uses AngularFire to create the synchronized array
     return $firebase(ref.limitToLast(10)).$asArray();
+}])
+.controller('WelcomeController',['$scope', '$state', function($scope, $state){
+    $scope.nextTwo = function(){
+        $state.go('home');
+    }
 }]);

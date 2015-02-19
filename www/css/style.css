@@ -1,15 +1,27 @@
 /* Empty. Add your own CSS if you like */
-.item img{
-    max-width: 100%;
-    max-height: 200px;
+#welcome {
+    height: 50%; /* Set your own height: percents, ems, whatever! */
+    width: 10%; /* Set your own width: percents, ems, whatever! */
+    overflow: auto; /* Recommended in case content is larger than the container */
+    margin: auto; /* Center the item vertically & horizontally */
+    position: absolute; /* Break it out of the regular flow */
+    top: 500px; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+
 }
-input[type=file]{
-    height:0;
-    overflow:auto;
+
+#browseBtn {
+    visibility: hidden;
 }
-.uploadButton{
-    margin-top: -40px;
+
+#myMenuButton {
+    height: 50%; /* Set your own height: percents, ems, whatever! */
+    width: 20%; /* Set your own width: percents, ems, whatever! */
+    overflow: auto; /* Recommended in case content is larger than the container */
+    margin: auto; /* Center the item vertically & horizontally */
+    position: absolute; /* Break it out of the regular flow */
+    top: 500px; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
 }
+
 .chatbox {
     position:absolute;
     bottom: 0px;
@@ -17,9 +29,10 @@ input[type=file]{
 .message-input {
     margin-top: 10px;
 }
-
+ 
 .chatbox-container {
     font-size: 1.2rem;
+    font
     color: rgba(0,0,0,0.8);
     position:relative;
     height: 200px;
@@ -28,7 +41,12 @@ input[type=file]{
     line-height: 29px;
     overflow: hidden;
 }
-html body {
+
+.scroll-content {
+    background: radial-gradient(ellipse at center,  #34679a 0%,#214163 47%,#0d1926 100%);
+}
+
+html, body {
     height: 100%;
 }
 
@@ -175,9 +193,138 @@ body > div:nth-of-type(4) > div:after {
 @-webkit-keyframes nucleus_ {
     0% {
         box-shadow: 0 0 0 transparent;
-    } 50% {
-          box-shadow: 0 0 25px #fff;
-      } 100% {
-            box-shadow: 0 0 0 transparent;
-        }
+    }
+    50% {
+        box-shadow: 0 0 25px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script);
+
+body {
+    background: radial-gradient(ellipse at center,  #34679a 0%,#214163 47%,#0d1926 100%); repeat;
+}
+
+#titlewrapper {
+    height: 300px;
+    width: 400px;
+    margin: 50px auto;
+    background: ;
+
+}
+
+.designwrap {
+    width: 100%;
+    background:;
+}
+
+h1.I {
+    font-family:'Fjalla One', sans-serif;
+    font-size:7em;
+    color: #ff3643;
+    margin: 0 -37px 0 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+    transition: all ease-in .2s;
+    -webkit-text-stroke: 1px rgba(238,238,238,.2);
+    display:inline;
+    opacity: 0;
+    text-shadow:
+    1px 1px 0 rgba(23,23,23,1),
+    2px 2px 0 rgba(23,23,23,0.9),
+    3px 3px 0 rgba(23,23,23,0.8),
+    4px 4px 0 rgba(23,23,23,0.7),
+    5px 5px 0 rgba(23,23,23,0.6),
+    6px 6px 0 rgba(23,23,23,0.5),
+    7px 7px 0 rgba(23,23,23,0.4),
+    8px 8px 0 rgba(23,23,23,0.3),
+    9px 9px 0 rgba(23,23,23,0.2),
+    10px 10px 0 rgba(23,23,23,0.1),
+    11px 11px 0 rgba(23,23,23,0.09),
+    12px 12px 0 rgba(23,23,23,0.08),
+    13px 13px 0 rgba(23,23,23,0.07),
+    14px 14px 0 rgba(23,23,23,0.06),
+    15px 15px 0 rgba(23,23,23,0.05),
+    16px 16px 0 rgba(23,23,23,0.04),
+    17px 17px 0 rgba(23,23,23,0.03),
+    18px 18px 0 rgba(23,23,23,0.02),
+    19px 19px 0 rgba(23,23,23,0.01),
+    20px 20px 0 rgba(23,23,23,0.0),
+    -15px 20px 10px rgba(23,23,23,0.05);
+}
+
+h1.design {
+    font-family:'Fjalla One', sans-serif;
+    font-size:7em;
+    color: #ff3643;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    display:inline;
+    text-shadow:
+    1px 1px 0 rgba(23,23,23,1),
+    2px 2px 0 rgba(23,23,23,0.9),
+    3px 3px 0 rgba(23,23,23,0.8),
+    4px 4px 0 rgba(23,23,23,0.7),
+    5px 5px 0 rgba(23,23,23,0.6),
+    6px 6px 0 rgba(23,23,23,0.5),
+    7px 7px 0 rgba(23,23,23,0.4),
+    8px 8px 0 rgba(23,23,23,0.3),
+    9px 9px 0 rgba(23,23,23,0.2),
+    10px 10px 0 rgba(23,23,23,0.1),
+    11px 11px 0 rgba(23,23,23,0.09),
+    12px 12px 0 rgba(23,23,23,0.08),
+    13px 13px 0 rgba(23,23,23,0.07),
+    14px 14px 0 rgba(23,23,23,0.06),
+    15px 15px 0 rgba(23,23,23,0.05),
+    16px 16px 0 rgba(23,23,23,0.04),
+    17px 17px 0 rgba(23,23,23,0.03),
+    18px 18px 0 rgba(23,23,23,0.02),
+    19px 19px 0 rgba(23,23,23,0.01),
+    20px 20px 0 rgba(23,23,23,0.0),
+    -15px 20px 10px rgba(23,23,23,0.05);
+}
+
+
+h1.code {
+    font-family:'Fjalla One',sans-serif;
+    font-size:1.2em;
+    color:#171717;
+    margin:500px 0 75px -50px;
+    padding:0;
+    letter-spacing:3px;
+    font-weight:500;
+    text-align: center;
+    text-transform:uppercase;
+    transition:all ease-in .2s;
+    text-shadow:
+    1px 1px 0 rgba(238,238,238,1),
+    2px 2px 0 rgba(238,238,238,0.9),
+    3px 3px 0 rgba(23,23,23,0.8),
+    4px 4px 0 rgba(23,23,23,0.7),
+    5px 5px 0 rgba(23,23,23,0.6),
+    6px 6px 0 rgba(23,23,23,0.5),
+    7px 7px 0 rgba(23,23,23,0.4),
+    8px 8px 0 rgba(23,23,23,0.3),
+    9px 9px 0 rgba(23,23,23,0.2),
+    10px 10px 0 rgba(23,23,23,0.1),
+    11px 11px 0 rgba(23,23,23,0.09),
+    12px 12px 0 rgba(23,23,23,0.08),
+    13px 13px 0 rgba(23,23,23,0.07),
+    14px 14px 0 rgba(23,23,23,0.06),
+    15px 15px 0 rgba(23,23,23,0.05),
+    16px 16px 0 rgba(23,23,23,0.04),
+    17px 17px 0 rgba(23,23,23,0.03),
+    18px 18px 0 rgba(23,23,23,0.02),
+    19px 19px 0 rgba(23,23,23,0.01),
+    20px 20px 0 rgba(23,23,23,0.0),
+    -15px 20px 10px rgba(23,23,23,0.05);
+
 }
