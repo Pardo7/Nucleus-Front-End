@@ -24,7 +24,7 @@ angular.module('nucleusChat.controllers',[])
     //Add message to the firebase data
     $scope.addMessage = function(message) {
         $scope.messages.$add({content: message});
-        //we reset the text input field to an empty string
+        //we reset the text input field to an empty string`
         $scope.message.theMessage = "";
     };
 }])

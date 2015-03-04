@@ -7,7 +7,8 @@ angular.module('nucleusChat.directives',[])
         replace: true,
         restrict: 'AE',
         link: function(scope, elem, attrs){
-
+            // Once The user clicks the browse button it will allow them to select an image -
+            // Or take a picture
             scope.browseFile = function(){
                 document.getElementById('browseBtn').click();
             }
@@ -20,7 +21,7 @@ angular.module('nucleusChat.directives',[])
 
                var fileReader = new FileReader();
 
-
+                // The selected image is than broadcast
                fileReader.onload = function(event){
                    $rootScope.$broadcast('event:file:selected', {image:event.target.result,sender:USER.name});
                }

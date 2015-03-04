@@ -1,2 +1,1 @@
-angular.module('nucleusChat.services', []).value('USER', {}).value('SOCKET_URL', 'localhost:8000');
-//angular.module("nucleusChat", ["firebase"]);
+angular.module('nucleusChat.services', []).value('USER', {}).value('SOCKET_URL', '10.1.5.208:8000');
