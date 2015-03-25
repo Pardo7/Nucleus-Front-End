@@ -6,7 +6,7 @@ angular.module('nucleusChat.controllers',[])
     $scope.next = function(){
         USER.name = $scope.user.name;
         $state.go('chat');
-    }
+    };
 }])
 .controller('ChatController',['$scope','$rootScope', function($scope, $rootScope){
 
@@ -38,5 +38,5 @@ angular.module('nucleusChat.controllers',[])
 .controller('WelcomeController',['$scope', '$state', function($scope, $state){
     $scope.nextTwo = function(){
         $state.go('home');
-    }
+    };
 }]);

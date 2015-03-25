@@ -30,5 +30,5 @@ angular.module('nucleusChat', ['ionic', 'firebase', 'nucleusChat.controllers', '
             url:'/chat',
             controller:'ChatController',
             templateUrl:'views/chat.html'
-        })
+        });
     }]);
