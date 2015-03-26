@@ -11,7 +11,7 @@ angular.module('nucleusChat.directives',[])
             // Or take a picture
             scope.browseFile = function(){
                 document.getElementById('browseBtn').click();
-            }
+            };
 
             angular.element(document.getElementById('browseBtn')).on('change', function(e){
 
@@ -24,14 +24,14 @@ angular.module('nucleusChat.directives',[])
                 // The selected image is than broadcast
                fileReader.onload = function(event){
                    $rootScope.$broadcast('event:file:selected', {image:event.target.result,sender:USER.name});
-               }
+               };
 
                fileReader.readAsDataURL(file);
             });
 
         },
         templateUrl: 'views/browse-file.html'
-    }
+    };
 }])
 .directive('chatList', ['$rootScope','SOCKET_URL', function($rootScope, SOCKET_URL){
     return{
@@ -71,7 +71,7 @@ angular.module('nucleusChat.directives',[])
 
         },
         templateUrl:'views/chat-list.html'
-    }
+    };
 }])
 .directive('userChat', ['$rootScope', function($rootScope) {
     return {
@@ -80,5 +80,5 @@ angular.module('nucleusChat.directives',[])
         scope: {},
         controller: 'UserChatController',
         templateUrl: "views/user-chat.html"
-    }
+    };
 }]);
